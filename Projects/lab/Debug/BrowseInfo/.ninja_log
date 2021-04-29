@@ -1,0 +1,18 @@
+# ninja log v5
+1	488	6414397680000000	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/driverbuttons.xcl	47025f864854ac14
+41	506	6414397680000000	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/driverleds.xcl	1e0c78a81e5cfb22
+494	615	6414397680000000	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/lab.xcl	1b8c7e69c2c56480
+513	635	6414397680000000	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/RTX_Config.xcl	11f0c6e8b23bd1ba
+641	760	6414397680000000	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/system_TM4C1294_TW.xcl	6121425059d091a9
+622	796	6414397680000000	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/rtx_lib.xcl	3ff1fdc348d83fdf
+803	1053	6414397691310260	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/driverleds.pbi	66615ed027233518
+767	1068	6414397691330261	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/driverbuttons.pbi	27e95debd036c6ae
+1057	1191	6414397692690339	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/lab.pbi	bdc8cbd644292e15
+1070	1223	6414397693000357	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/RTX_Config.pbi	a1ec01aaef0e0144
+1193	1356	6414397694340433	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/rtx_lib.pbi	5429084176703a8c
+1225	1442	6414397695110477	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/system_TM4C1294_TW.pbi	e9873b14b38bc29c
+1359	1457	6414397695190482	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/lab_part0.pbi	7c88bbbf9446ff93
+1444	1514	6414397695920524	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/lab_part1.pbi	673937f33fa61f46
+1460	1558	6414397696370550	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/lab_part2.pbi	91f1f6a7852982d7
+1561	1657	6414397697350606	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/lab.pbd	c1f0002dbb6fe661
+1660	3696	6414397717301747	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/Debug/BrowseInfo/lab.pbw	411c45038ed90eaf

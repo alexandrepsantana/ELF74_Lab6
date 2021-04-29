@@ -1,0 +1,10 @@
+# ninja log v5
+1	157	6414398341367441	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/startup_TM4C1294.o	34c53e427d52c202
+64	546	6414398345087654	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/driverbuttons.o	b32a812dd9e479b7
+160	580	6414398345327668	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/driverleds.o	60a4f7b7a525211d
+587	702	6414398346717747	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/RTX_Config.o	43531b0cfd6d64ce
+553	835	6414398348037823	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/lab.o	66e5af1c161aebdf
+709	869	6414398348327839	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/rtx_lib.o	4b529a0265acecb7
+843	998	6414398349647915	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/system_TM4C1294_TW.o	3f0502e32a4d3c6e
+1005	1595	6414398355458247	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Exe/lab.out	65c85bcf723c30d6
+1602	1661	6414398356428303	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Exe/lab.bin	d6e9772cf1134d54

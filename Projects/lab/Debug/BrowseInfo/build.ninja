@@ -1,0 +1,100 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+
+
+
+#Build steps
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\drivers\driverbuttons.c -xcl_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.xcl -macro_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\drivers\driverbuttons.c -D PART_TM4C1294NCPDT --diag_suppress Pa050 -o C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\ewarm\Obj\ --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\drivers\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\TivaWare_C_Series-2.1.4.178\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\Core\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\ -Ohz --use_c++_inline -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.tmp
+  rspfile_name = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.xcl.rsp
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\drivers\driverleds.c -xcl_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.xcl -macro_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\drivers\driverleds.c -D PART_TM4C1294NCPDT --diag_suppress Pa050 -o C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\ewarm\Obj\ --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\drivers\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\TivaWare_C_Series-2.1.4.178\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\Core\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\ -Ohz --use_c++_inline -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.tmp
+  rspfile_name = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.xcl.rsp
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\lab.c -xcl_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.xcl -macro_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\lab.c -D PART_TM4C1294NCPDT --diag_suppress Pa050 -o C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\ewarm\Obj\ --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\drivers\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\TivaWare_C_Series-2.1.4.178\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\Core\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\ -Ohz --use_c++_inline -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.tmp
+  rspfile_name = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.xcl.rsp
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\RTX_Config.c -xcl_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.xcl -macro_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\RTX_Config.c -D PART_TM4C1294NCPDT --diag_suppress Pa050 -o C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\ewarm\Obj\ --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\drivers\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\TivaWare_C_Series-2.1.4.178\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\Core\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\ -Ohz --use_c++_inline -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.tmp
+  rspfile_name = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.xcl.rsp
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\rtx_lib.c -xcl_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.xcl -macro_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\rtx_lib.c -D PART_TM4C1294NCPDT --diag_suppress Pa050 -o C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\ewarm\Obj\ --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\drivers\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\TivaWare_C_Series-2.1.4.178\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\Core\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\ -Ohz --use_c++_inline -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.tmp
+  rspfile_name = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.xcl.rsp
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\system_TM4C1294_TW.c -xcl_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.xcl -macro_file C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\system_TM4C1294_TW.c -D PART_TM4C1294NCPDT --diag_suppress Pa050 -o C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\ewarm\Obj\ --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\drivers\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\TivaWare_C_Series-2.1.4.178\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\Core\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\ -I C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\ -Ohz --use_c++_inline -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.tmp
+  rspfile_name = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.xcl.rsp
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.pbi : INDEXER C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.xcl |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\drivers\driverbuttons.c
+  flags = -out=C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.pbi -f C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.xcl
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.pbi : INDEXER C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.xcl |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\drivers\driverleds.c
+  flags = -out=C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.pbi -f C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.xcl
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbi : INDEXER C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.xcl |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\lab.c
+  flags = -out=C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbi -f C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.xcl
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.pbi : INDEXER C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.xcl |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\RTX_Config.c
+  flags = -out=C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.pbi -f C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.xcl
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.pbi : INDEXER C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.xcl |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\rtx_lib.c
+  flags = -out=C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.pbi -f C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.xcl
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.pbi : INDEXER C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.xcl |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\src\system_TM4C1294_TW.c
+  flags = -out=C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.pbi -f C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.xcl
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbw : MAKEBROWSE C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbd
+  flags = C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbd -output C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbw
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part0.pbi : PDBLINK C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.pbi |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.pbi
+  flags = -M C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part0.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverbuttons.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\driverleds.pbi
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part1.pbi : PDBLINK C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbi |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.pbi
+  flags = -M C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part1.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\RTX_Config.pbi
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part2.pbi : PDBLINK C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.pbi |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.pbi
+  flags = -M C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part2.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\rtx_lib.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\system_TM4C1294_TW.pbi
+
+build C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbd : PDBLINK C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part0.pbi |  $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part1.pbi $
+C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part2.pbi
+  flags = -M C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab.pbd C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part0.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part1.pbi C$:\Users\Alexandre\Documents\GitHub\ELF74_Lab6\Projects\lab\Debug\BrowseInfo\lab_part2.pbi
+
