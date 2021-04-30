@@ -8,3 +8,12 @@
 843	998	6414398349647915	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/system_TM4C1294_TW.o	3f0502e32a4d3c6e
 1005	1595	6414398355458247	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Exe/lab.out	65c85bcf723c30d6
 1602	1661	6414398356428303	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Exe/lab.bin	d6e9772cf1134d54
+13	168	6414422773454877	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/startup_TM4C1294.o	34c53e427d52c202
+37	850	6414422780125258	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/driverbuttons.o	b32a812dd9e479b7
+171	886	6414422780435276	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/driverleds.o	60a4f7b7a525211d
+895	1021	6414422781745351	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/RTX_Config.o	43531b0cfd6d64ce
+1030	1202	6414422783635459	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/rtx_lib.o	4b529a0265acecb7
+858	1235	6414422783665461	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/lab.o	66e5af1c161aebdf
+1209	1376	6414422785435562	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Obj/system_TM4C1294_TW.o	3f0502e32a4d3c6e
+1384	1963	6414422791115887	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Exe/lab.out	65c85bcf723c30d6
+1970	2013	6414422791915933	C:/Users/Alexandre/Documents/GitHub/ELF74_Lab6/Projects/lab/ewarm/Exe/lab.bin	d6e9772cf1134d54
